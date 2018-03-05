@@ -7,9 +7,11 @@
 This README provides a high-level overview of the software used by the
 application as well as how to bootstrap it and run its test suite.
 
-Things you may want to cover:
+## Stack
 
-* Ruby version
+* Rails 5.1.5
+
+* Ruby 2.5.0
 
 * System dependencies
 

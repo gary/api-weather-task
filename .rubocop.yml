@@ -1,0 +1,9 @@
+require: 'rubocop-rspec'
+
+AllCops:
+  Exclude:
+    - 'Rakefile'
+    - 'bin/*'
+
+Rails:
+  Enabled: true

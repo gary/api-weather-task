@@ -2,10 +2,10 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/b48044fd46e40a473c16/maintainability)](https://codeclimate.com/github/gary/api-weather-task/maintainability)
 [![Inline docs](http://inch-ci.org/github/gary/api-weather-task.svg?branch=master)](http://inch-ci.org/github/gary/api-weather-task)
 
-# README
+# Weather API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README provides a high-level overview of the software used by the
+application as well as how to bootstrap it and run its test suite.
 
 Things you may want to cover:
 
@@ -19,7 +19,11 @@ Things you may want to cover:
 
 * Database initialization
 
-* How to run the test suite
+## Running the Tests
+
+```
+$ rspec
+```
 
 * Services (job queues, cache servers, search engines, etc.)
 

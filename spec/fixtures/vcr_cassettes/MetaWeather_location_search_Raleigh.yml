@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.metaweather.com/api/location/search/?lattlong=35.8150476,-78.57744079999999
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.6.0 x86_64) ruby/2.5.0p0
+      Host:
+      - www.metaweather.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Language:
+      - en
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains
+      Vary:
+      - Accept-Language, Cookie
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      Content-Type:
+      - application/json
+      X-Cloud-Trace-Context:
+      - 85daec101bb5784ed6d8256a08ebb1c0
+      Date:
+      - Thu, 08 Mar 2018 00:15:07 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '1149'
+    body:
+      encoding: UTF-8
+      string: '[{"distance":6733,"title":"Raleigh","location_type":"City","woeid":2478307,"latt_long":"35.785511,-78.642670"},{"distance":214757,"title":"Charlotte","location_type":"City","woeid":2378426,"latt_long":"35.222500,-80.837540"},{"distance":217168,"title":"Richmond","location_type":"City","woeid":2480894,"latt_long":"37.540699,-77.433647"},{"distance":248573,"title":"Virginia
+        Beach","location_type":"City","woeid":2512636,"latt_long":"36.755020,-76.059196"},{"distance":301331,"title":"Columbia","location_type":"City","woeid":2383552,"latt_long":"34.000833,-81.035278"},{"distance":359319,"title":"Charleston","location_type":"City","woeid":2378319,"latt_long":"32.781151,-79.931602"},{"distance":368982,"title":"Washington
+        DC","location_type":"City","woeid":2514815,"latt_long":"38.899101,-77.028999"},{"distance":423310,"title":"Baltimore","location_type":"City","woeid":2358820,"latt_long":"39.290550,-76.609596"},{"distance":510727,"title":"Wilmington","location_type":"City","woeid":2521358,"latt_long":"39.740231,-75.550842"},{"distance":548602,"title":"Philadelphia","location_type":"City","woeid":2471217,"latt_long":"39.952271,-75.162369"}]'
+    http_version:
+  recorded_at: Thu, 08 Mar 2018 00:15:07 GMT
+recorded_with: VCR 4.0.0

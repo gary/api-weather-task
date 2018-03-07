@@ -66,6 +66,14 @@ GEM
       rack (>= 1.3.0)
       rack-accept
       virtus (>= 1.0.0)
+    grape-entity (0.7.1)
+      activesupport (>= 4.0)
+      multi_json (>= 1.3.2)
+    grape-swagger (0.28.0)
+      grape (>= 0.16.2)
+    grape-swagger-entity (0.2.3)
+      grape-entity (>= 0.5.0)
+      grape-swagger (>= 0.20.4)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
@@ -82,6 +90,7 @@ GEM
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
+    multi_json (1.13.1)
     mustermann (1.0.2)
     mustermann-grape (1.0.0)
       mustermann (~> 1.0.0)
@@ -194,6 +203,8 @@ PLATFORMS
 DEPENDENCIES
   byebug
   grape (~> 1.0)
+  grape-swagger
+  grape-swagger-entity
   listen (>= 3.0.5, < 3.2)
   pry-byebug
   puma (~> 3.7)

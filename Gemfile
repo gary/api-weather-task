@@ -8,6 +8,9 @@ git_source(:github) do |repo_name|
 end
 
 gem 'grape', '~> 1.0'
+gem 'grape-swagger'
+gem 'grape-swagger-entity'
+
 gem 'rails', '~> 5.1.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'

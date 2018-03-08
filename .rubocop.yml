@@ -5,5 +5,9 @@ AllCops:
     - 'Rakefile'
     - 'bin/*'
 
+Metrics/BlockLength:
+  ExcludedMethods:
+    - describe
+
 Rails:
   Enabled: true

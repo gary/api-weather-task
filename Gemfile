@@ -34,6 +34,8 @@ gem 'rest-client', '~> 2.0'
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'pry-byebug'
+
+  gem 'rspec-collection_matchers', '~> 1.1'
   gem 'rspec-rails', '~> 3.7.0'
 end
 

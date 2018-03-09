@@ -7,6 +7,8 @@ module WeeklyForecastDecorator
   def temperatures(woeid: nil, zip_code: nil)
     forecast = super(woeid: woeid, zip_code: zip_code)
 
+    return if forecast.empty?
+
     summary(forecast).transform_values do |celcius|
       celcius.convert_to('tempF').scalar.to_f.truncate(2)
     end

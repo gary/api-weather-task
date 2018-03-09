@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.metaweather.com/api/location/0000000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.6.0 x86_64) ruby/2.5.0p0
+      Host:
+      - www.metaweather.com
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Language:
+      - en
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains
+      Vary:
+      - Accept-Language, Cookie
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      Content-Type:
+      - application/json
+      X-Cloud-Trace-Context:
+      - bac1063161e7c2e0dd98debc06f13998;o=1
+      Date:
+      - Fri, 09 Mar 2018 23:06:18 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '23'
+    body:
+      encoding: UTF-8
+      string: '{"detail":"Not found."}'
+    http_version:
+  recorded_at: Fri, 09 Mar 2018 23:06:18 GMT
+recorded_with: VCR 4.0.0

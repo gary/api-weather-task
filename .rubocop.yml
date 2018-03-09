@@ -11,6 +11,7 @@ AllCops:
 Metrics/BlockLength:
   ExcludedMethods:
     - describe
+    - context
 
 Rails:
   Enabled: true

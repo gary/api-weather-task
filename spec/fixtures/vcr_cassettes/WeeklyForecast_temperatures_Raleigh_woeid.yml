@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.metaweather.com/api/location/2478307/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.6.0 x86_64) ruby/2.5.0p0
+      Host:
+      - www.metaweather.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Language:
+      - en
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains
+      Vary:
+      - Accept-Language, Cookie
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      Content-Type:
+      - application/json
+      X-Cloud-Trace-Context:
+      - 9d24750b7ddbe8b61229872991ee199d
+      Date:
+      - Fri, 09 Mar 2018 20:02:38 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '3579'
+    body:
+      encoding: UTF-8
+      string: '{"consolidated_weather":[{"id":6694265568624640,"weather_state_name":"Light
+        Cloud","weather_state_abbr":"lc","wind_direction_compass":"WNW","created":"2018-03-09T18:19:12.085540Z","applicable_date":"2018-03-09","min_temp":-1.0374999999999999,"max_temp":9.1524999999999999,"the_temp":9.6050000000000004,"wind_speed":7.8303559048297942,"wind_direction":286.25765200063131,"air_pressure":1017.085,"humidity":43,"visibility":16.609251968503937,"predictability":70},{"id":5381970993348608,"weather_state_name":"Showers","weather_state_abbr":"s","wind_direction_compass":"WSW","created":"2018-03-09T18:19:15.387630Z","applicable_date":"2018-03-10","min_temp":2.8824999999999998,"max_temp":13.3925,"the_temp":11.780000000000001,"wind_speed":3.4137061121768872,"wind_direction":238.53974239603599,"air_pressure":1017.8299999999999,"humidity":59,"visibility":12.955589358148412,"predictability":73},{"id":6385485605765120,"weather_state_name":"Light
+        Rain","weather_state_abbr":"lr","wind_direction_compass":"ENE","created":"2018-03-09T18:19:19.390410Z","applicable_date":"2018-03-11","min_temp":3.4625000000000004,"max_temp":8.6974999999999998,"the_temp":8.8849999999999998,"wind_speed":7.5902695703332537,"wind_direction":64.035532186099573,"air_pressure":1014.54,"humidity":91,"visibility":7.9038415652588885,"predictability":75},{"id":5109306068303872,"weather_state_name":"Snow","weather_state_abbr":"sn","wind_direction_compass":"NW","created":"2018-03-09T18:19:21.301980Z","applicable_date":"2018-03-12","min_temp":1.0233333333333334,"max_temp":5.9824999999999999,"the_temp":6.1150000000000002,"wind_speed":10.232367072343516,"wind_direction":322.0,"air_pressure":1006.105,"humidity":82,"visibility":8.051417223415255,"predictability":90},{"id":5246946147041280,"weather_state_name":"Light
+        Cloud","weather_state_abbr":"lc","wind_direction_compass":"NW","created":"2018-03-09T18:19:24.084720Z","applicable_date":"2018-03-13","min_temp":-0.62749999999999995,"max_temp":7.8375000000000004,"the_temp":6.8899999999999997,"wind_speed":9.0772261987532818,"wind_direction":308.04357472072775,"air_pressure":1012.245,"humidity":50,"visibility":19.57319255547602,"predictability":70},{"id":6666540212551680,"weather_state_name":"Light
+        Cloud","weather_state_abbr":"lc","wind_direction_compass":"WNW","created":"2018-03-09T18:19:27.570680Z","applicable_date":"2018-03-14","min_temp":-2.23,"max_temp":7.9675000000000002,"the_temp":6.0599999999999996,"wind_speed":6.7306670378323927,"wind_direction":295.93094852460069,"air_pressure":1013.38,"humidity":53,"visibility":null,"predictability":70}],"time":"2018-03-09T15:02:37.894240-05:00","sun_rise":"2018-03-09T06:33:44.179125-05:00","sun_set":"2018-03-09T18:16:54.345406-05:00","timezone_name":"LMT","parent":{"title":"North
+        Carolina","location_type":"Region / State / Province","woeid":2347592,"latt_long":"35.21962,-80.019547"},"sources":[{"title":"BBC","slug":"bbc","url":"http://www.bbc.co.uk/weather/","crawl_rate":180},{"title":"Forecast.io","slug":"forecast-io","url":"http://forecast.io/","crawl_rate":480},{"title":"Met
+        Office","slug":"met-office","url":"http://www.metoffice.gov.uk/","crawl_rate":180},{"title":"OpenWeatherMap","slug":"openweathermap","url":"http://openweathermap.org/","crawl_rate":360},{"title":"World
+        Weather Online","slug":"world-weather-online","url":"http://www.worldweatheronline.com/","crawl_rate":360},{"title":"Yahoo","slug":"yahoo","url":"http://weather.yahoo.com/","crawl_rate":180}],"title":"Raleigh","location_type":"City","woeid":2478307,"latt_long":"35.785511,-78.642670","timezone":"America/New_York"}'
+    http_version:
+  recorded_at: Fri, 09 Mar 2018 20:02:38 GMT
+recorded_with: VCR 4.0.0

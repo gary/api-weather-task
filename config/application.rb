@@ -38,6 +38,11 @@ module Weather
     config.paths.add File.join('app', 'api'), glob: File.join('**', '*.rb')
     config.autoload_paths += Dir[Rails.root.join('app', 'api', '*')]
 
+    # Auto-load decorators and its subdirectories
+    config.paths.add File.join('app', 'decorators'),
+                     glob: File.join('**', '*.rb')
+    config.autoload_paths += Dir[Rails.root.join('app', 'decorators', '*')]
+
     # Auto-load lib and its subdirectories
     config.paths.add File.join('lib'), glob: File.join('**', '*.rb')
     config.autoload_paths += Dir[Rails.root.join('lib', '*')]

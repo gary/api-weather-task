@@ -17,7 +17,9 @@ gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 
+gem 'geocoder', '~> 1.4'
 gem 'rest-client', '~> 2.0'
+gem 'us_zipcode'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'

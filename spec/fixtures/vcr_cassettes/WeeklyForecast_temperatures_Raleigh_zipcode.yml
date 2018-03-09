@@ -1,0 +1,217 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=27604&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 08 Mar 2018 23:41:34 GMT
+      Expires:
+      - Fri, 09 Mar 2018 23:41:34 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '480'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - public, max-age=86400
+      Age:
+      - '65860'
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "27604",
+                       "short_name" : "27604",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "Raleigh",
+                       "short_name" : "Raleigh",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Wake County",
+                       "short_name" : "Wake County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "North Carolina",
+                       "short_name" : "NC",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Raleigh, NC 27604, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 35.855309,
+                          "lng" : -78.48516789999999
+                       },
+                       "southwest" : {
+                          "lat" : 35.7845309,
+                          "lng" : -78.6412928
+                       }
+                    },
+                    "location" : {
+                       "lat" : 35.8150476,
+                       "lng" : -78.57744079999999
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 35.855309,
+                          "lng" : -78.48516789999999
+                       },
+                       "southwest" : {
+                          "lat" : 35.7845309,
+                          "lng" : -78.6412928
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJu8jQkVhZrIkRBX_cgrMsuFU",
+                 "types" : [ "postal_code" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version:
+  recorded_at: Fri, 09 Mar 2018 17:59:16 GMT
+- request:
+    method: get
+    uri: https://www.metaweather.com/api/location/search/?lattlong=35.8150476,-78.57744079999999
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.6.0 x86_64) ruby/2.5.0p0
+      Host:
+      - www.metaweather.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Language:
+      - en
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains
+      Vary:
+      - Accept-Language, Cookie
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      Content-Type:
+      - application/json
+      X-Cloud-Trace-Context:
+      - 6d47b09da0cd0683f02375f1469fa994;o=1
+      Date:
+      - Fri, 09 Mar 2018 17:59:15 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '1149'
+    body:
+      encoding: UTF-8
+      string: '[{"distance":6733,"title":"Raleigh","location_type":"City","woeid":2478307,"latt_long":"35.785511,-78.642670"},{"distance":214757,"title":"Charlotte","location_type":"City","woeid":2378426,"latt_long":"35.222500,-80.837540"},{"distance":217168,"title":"Richmond","location_type":"City","woeid":2480894,"latt_long":"37.540699,-77.433647"},{"distance":248573,"title":"Virginia
+        Beach","location_type":"City","woeid":2512636,"latt_long":"36.755020,-76.059196"},{"distance":301331,"title":"Columbia","location_type":"City","woeid":2383552,"latt_long":"34.000833,-81.035278"},{"distance":359319,"title":"Charleston","location_type":"City","woeid":2378319,"latt_long":"32.781151,-79.931602"},{"distance":368982,"title":"Washington
+        DC","location_type":"City","woeid":2514815,"latt_long":"38.899101,-77.028999"},{"distance":423310,"title":"Baltimore","location_type":"City","woeid":2358820,"latt_long":"39.290550,-76.609596"},{"distance":510727,"title":"Wilmington","location_type":"City","woeid":2521358,"latt_long":"39.740231,-75.550842"},{"distance":548602,"title":"Philadelphia","location_type":"City","woeid":2471217,"latt_long":"39.952271,-75.162369"}]'
+    http_version:
+  recorded_at: Fri, 09 Mar 2018 17:59:17 GMT
+- request:
+    method: get
+    uri: https://www.metaweather.com/api/location/2478307/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.6.0 x86_64) ruby/2.5.0p0
+      Host:
+      - www.metaweather.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Language:
+      - en
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains
+      Vary:
+      - Accept-Language, Cookie
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      Content-Type:
+      - application/json
+      X-Cloud-Trace-Context:
+      - 8beff46d6a85cf4e1fa87d0b32742dda
+      Date:
+      - Fri, 09 Mar 2018 17:59:15 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '3569'
+    body:
+      encoding: UTF-8
+      string: '{"consolidated_weather":[{"id":6263556584505344,"weather_state_name":"Light
+        Cloud","weather_state_abbr":"lc","wind_direction_compass":"WNW","created":"2018-03-09T15:19:11.390720Z","applicable_date":"2018-03-09","min_temp":-1.0374999999999999,"max_temp":9.1524999999999999,"the_temp":9.625,"wind_speed":7.8023942798297945,"wind_direction":286.25765200063131,"air_pressure":1017.085,"humidity":43,"visibility":16.912791795911872,"predictability":70},{"id":6094454528147456,"weather_state_name":"Showers","weather_state_abbr":"s","wind_direction_compass":"WSW","created":"2018-03-09T15:19:14.579320Z","applicable_date":"2018-03-10","min_temp":2.8824999999999998,"max_temp":13.3925,"the_temp":11.824999999999999,"wind_speed":3.2906749621768867,"wind_direction":243.86243406141517,"air_pressure":1017.3299999999999,"humidity":59,"visibility":13.420996381134175,"predictability":73},{"id":4800059631730688,"weather_state_name":"Light
+        Rain","weather_state_abbr":"lr","wind_direction_compass":"ENE","created":"2018-03-09T15:19:17.970100Z","applicable_date":"2018-03-11","min_temp":3.4625000000000004,"max_temp":8.6974999999999998,"the_temp":8.7599999999999998,"wind_speed":7.5679002703332534,"wind_direction":58.37406688775701,"air_pressure":1014.54,"humidity":92,"visibility":7.6475259484609879,"predictability":75},{"id":4926250871160832,"weather_state_name":"Snow","weather_state_abbr":"sn","wind_direction_compass":"NNW","created":"2018-03-09T15:19:20.002200Z","applicable_date":"2018-03-12","min_temp":1.0233333333333334,"max_temp":5.9824999999999999,"the_temp":6.2800000000000002,"wind_speed":9.9863047723435141,"wind_direction":329.75,"air_pressure":1006.605,"humidity":81,"visibility":8.2048959078978765,"predictability":90},{"id":5392081681907712,"weather_state_name":"Light
+        Cloud","weather_state_abbr":"lc","wind_direction_compass":"NW","created":"2018-03-09T15:19:24.290880Z","applicable_date":"2018-03-13","min_temp":-0.62749999999999995,"max_temp":7.8375000000000004,"the_temp":7.0899999999999999,"wind_speed":8.9318257487532815,"wind_direction":308.04357472072775,"air_pressure":1012.245,"humidity":49,"visibility":24.549754434104827,"predictability":70},{"id":5922998158622720,"weather_state_name":"Light
+        Cloud","weather_state_abbr":"lc","wind_direction_compass":"WNW","created":"2018-03-09T15:19:26.500490Z","applicable_date":"2018-03-14","min_temp":-2.23,"max_temp":7.9675000000000002,"the_temp":6.0599999999999996,"wind_speed":6.7306670378323927,"wind_direction":295.93094852460069,"air_pressure":1013.38,"humidity":53,"visibility":null,"predictability":70}],"time":"2018-03-09T12:59:15.588500-05:00","sun_rise":"2018-03-09T06:33:44.179125-05:00","sun_set":"2018-03-09T18:16:54.345406-05:00","timezone_name":"LMT","parent":{"title":"North
+        Carolina","location_type":"Region / State / Province","woeid":2347592,"latt_long":"35.21962,-80.019547"},"sources":[{"title":"BBC","slug":"bbc","url":"http://www.bbc.co.uk/weather/","crawl_rate":180},{"title":"Forecast.io","slug":"forecast-io","url":"http://forecast.io/","crawl_rate":480},{"title":"Met
+        Office","slug":"met-office","url":"http://www.metoffice.gov.uk/","crawl_rate":180},{"title":"OpenWeatherMap","slug":"openweathermap","url":"http://openweathermap.org/","crawl_rate":360},{"title":"World
+        Weather Online","slug":"world-weather-online","url":"http://www.worldweatheronline.com/","crawl_rate":360},{"title":"Yahoo","slug":"yahoo","url":"http://weather.yahoo.com/","crawl_rate":180}],"title":"Raleigh","location_type":"City","woeid":2478307,"latt_long":"35.785511,-78.642670","timezone":"America/New_York"}'
+    http_version:
+  recorded_at: Fri, 09 Mar 2018 17:59:18 GMT
+recorded_with: VCR 4.0.0

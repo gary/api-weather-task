@@ -4,6 +4,9 @@ AllCops:
   Exclude:
     - 'Rakefile'
     - 'bin/*'
+    - 'db/migrate/*'
+    - 'db/schema.rb'
+    - 'lib/tasks/zipcodes.rake' # library-installed rake task
 
 Metrics/BlockLength:
   ExcludedMethods:

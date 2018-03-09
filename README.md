@@ -17,9 +17,13 @@ application as well as how to bootstrap it and run its test suite.
 
 * Configuration
 
-* Database creation
+## Bootstrapping the Database
 
-* Database initialization
+```
+$ rails db:create
+$ rails db:schema:load
+$ rails zipcodes:update
+```
 
 ## Running the Tests
 

@@ -18,6 +18,7 @@ gem 'sqlite3'
 gem 'puma', '~> 3.7'
 
 gem 'geocoder', '~> 1.4'
+gem 'loofah', '~> 2.2'
 gem 'rest-client', '~> 2.0'
 gem 'ruby-units', '~> 2.3'
 gem 'us_zipcode'
